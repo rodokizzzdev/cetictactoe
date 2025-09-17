@@ -1,0 +1,141 @@
+@CHARSET "utf-8";
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+#body{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    -moz-box-shadow: 2px 2px 3px 3px black;
+    -webkik-box-shadow:2px 2px 3px 3px black;
+    box-shadow: 2px 2px 3px 3px;
+}
+header{
+    position:absolute;
+    width: 40em;
+    left: 50%;
+    margin-left: -320px;
+    text-align: center;
+}
+#Titulo{
+    font-size: 4em;
+    font-family: 'Caveat', cursive;
+    font-weight: 900;
+}
+p {
+  top:10%;
+  font-size: 500%;
+  background:transparent;
+}
+.dots{
+    display:inline-block;
+    background: #22c72f ;
+    height:6em;
+    width:6em;
+    float: left;
+    border: 10px solid  #22c72f ;
+}
+.dots2{
+  display:inline-block;
+  background:#333;
+  height:5em;
+  width:6em;
+  float: right;
+}
+.options{
+    height:100px;
+    width: 100%;
+    text-align: center;
+    z-index:2;
+}
+td{
+    width: 1.5em;
+    height: 1.9em;
+    border: none;
+    font-size: 5em;
+    font-family: 'Caveat', cursive;
+    color:white;
+}
+table{
+    position:absolute;
+    top:15%;
+    z-index:1;
+}
+.clicked{
+    background-color:  #78746f ;
+}
+.buttons{
+    background-image: url("../img/logocetictactoe.png");
+    background-repeat: no-repeat;
+    background-size: 1.4em 1.4em;
+    background-color:  #677af6 ;
+    border: 3;
+}
+.buttons:hover {
+    background-color:  #f6bf65 ;
+}
+#message{
+    visibility:hidden;
+    font-weight:bold;
+    margin-top:80px;
+    font-size: 2em;
+    text-align:left;
+}
+footer{
+    font-size: 2em;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes flash {
+  from { background-color: orange; }
+  to { background-color: yellow; }
+}
+
+@media screen and (max-width: 1000px){
+    #body{
+        width: 100%;
+        height: 70%;
+        left: 1em;
+        top: auto;
+        margin-left: 0;
+    }
+    #Titulo{
+        +font-size: 6em;
+    }
+    .dots{
+         width: 7em;
+        height: 7em;
+    }
+    .dots2{
+         width: 7em;
+        height: 7em;
+    }
+    .options{
+        height:10%;
+        width: 100%;
+    }
+    td{
+
+        width: 3.5em;
+        height: 4.9em;
+    }
+    .buttons{
+        background-size: 3.2em 4em;
+    }
+    #message{
+        visibility:hidden;
+        font-weight:bold;
+        margin-top:120px;
+        font-size: 5em;
+        text-align: center;
+    }
+    
+}

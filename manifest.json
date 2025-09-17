@@ -1,0 +1,33 @@
+{
+  "short_name": "CeTicTacToe",
+  "name": "El Juego de Gato - Desarrollo de Software Ceti Tonalá",
+  "icons": [
+    {
+      "src": "favicon/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/android-icon-192x192.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/android-icon-192x192.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/android-icon-192x192.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://www.cetictactoe.rodokizzzdev.com",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "theme_color": "#ffffff",
+  "description": "By Rodokizzz"
+}
